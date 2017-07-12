@@ -1,2 +1,2 @@
-FROM       openjdk:8-jdk-alpine
-MAINTAINER Jon Jagger <jon@jaggersoft.com>
+FROM  openjdk:8-jdk-alpine
+LABEL maintainer=jon@jaggersoft.com
