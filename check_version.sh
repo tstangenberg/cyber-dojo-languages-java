@@ -2,7 +2,7 @@
 set -e
 
 readonly EXPECTED=$(cat README.md | grep Version | cut -d'=' -f2)
-readonly ACTUAL=$(docker run --rm -it cyberdojofoundation/java sh -c 'javac --version 2>&1')
+readonly ACTUAL=$(docker run --rm -it cyberdojofoundation/java sh -c 'javac -version 2>&1')
 
 if echo ${ACTUAL} | grep -q ${EXPECTED}; then
   echo "VERSION CONFIRMED as ${EXPECTED}"
