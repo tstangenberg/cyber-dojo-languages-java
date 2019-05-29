@@ -5,6 +5,6 @@ script:
     - SCRIPT=run_build_image2.sh
     - curl -O https://raw.githubusercontent.com/cyber-dojo-languages/image_builder/master/${SCRIPT}
     - chmod +x ./${SCRIPT}
-    - echo 111
+    - echo 111234
     - ./${SCRIPT} ${PWD}
     - ./check_version.sh
