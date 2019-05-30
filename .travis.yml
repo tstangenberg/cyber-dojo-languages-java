@@ -3,8 +3,7 @@ language: bash
 
 script:
     - SCRIPT=run_build_image2.sh
-    - curl -O https://raw.githubusercontent.com/cyber-dojo-languages/image_builder/master/${SCRIPT}
-    - chmod +x ./${SCRIPT}
-    - echo 1112343456
+    - curl -O --fail https://raw.githubusercontent.com/cyber-dojo-languages/image_builder/master/${SCRIPT}
+    - chmod 700 ./${SCRIPT}
     - ./${SCRIPT} ${PWD}
     - ./check_version.sh
